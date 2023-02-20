@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 7</title>
+    <link href="index.css" rel="stylesheet" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header role="navigation">
+      <navbar aria-label="navbar" role="navigation">
+        <div class="parent-container">
+          <div class="navbar-container" id="navbar">
+            <div class="logo" alt="logo">BOOCIC</div>
+            <div class="links" tabindex="-1">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Screenshot</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </navbar>
+    </header>
+    <main role="main">
+      <div class="main-container">
+        <form class="form-container">
+          <div class="control">
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              id="lastname"
+              name="fname"
+              placeholder="First Name"
+              required=""
+            /><br />
+          </div>
+          <div class="control">
+            <label for="fname">Last Name:</label>
+            <input
+              type="text"
+              id="lastname"
+              name="lname"
+              placeholder="LastName"
+              aria-required=""
+              required=""
+            /><br />
+          </div>
+          <div class="control">
+            <label for="fname">Email: </label>
+            <input
+              type="email"
+              name="email"
+              aria-required=""
+              id="email"
+              required=""
+              placeholder="Email"
+              size="25"
+              maxlength="25"
+            /><br />
+          </div>
+          <div class="birth-gender-interest">
+            <div class="birth-gender">
+              <div class="control">
+                <label for="age">Birth Year:</label>
+                <select name="ages" id="age">
+                  <option value="2000">2000</option>
+                  <option value="2001">2001</option>
+                  <option value="2002">2002</option></select
+                ><br />
+              </div>
+              <div class="gender-container">
+                <label for="age">Gender:</label>
+                <div class="control">
+                  <input type="radio" name="gender" value="male" />
+                  <label for="gender">Male</label>
+                </div>
+                <div class="control">
+                  <input type="radio" name="gender" value="male" />
+                  <label for="gender">Female</label><br />
+                </div>
+              </div>
+            </div>
+            <div class="game-interest">
+              <label for="game">Interests:</label><br />
+              <input
+                type="checkbox"
+                role="checkbox"
+                id="game1"
+                name="game1"
+                value="cricket"
+                aria-checked="true|false"
+              />
+              <label for="game1">Cricket</label><br />
+              <input
+                type="checkbox"
+                role="checkbox"
+                id="game2"
+                name="game2"
+                value="football"
+                aria-checked="true|false"
+              />
+              <label for="game2">Football</label><br />
+              <input
+                type="checkbox"
+                role="checkbox"
+                id="game3"
+                name="game3"
+                value="hockey"
+                aria-checked="true|false"
+              />
+              <label for="game3">Hockey</label><br />
+              <div role="button" aria-pressed="false">
+                <input class="btn" type="submit" value="submit" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <section>
+      <div class="table-container">
+        <table style="width: 75%">
+          <tr>
+            <th>name</th>
+            <th>name</th>
+            <th>name</th>
+            <th>name</th>
+            <th>name</th>
+          </tr>
+          <tr>
+            <th>name</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>name</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>name</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>name</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <div class="btn-container">
+      <button id="myBtn">Open Modal</button>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+          incidunt aut ipsa laboriosam enim nemo deleniti, assumenda,
+          accusantium eligendi magni modi laudantium nobis in eum asperiores
+          soluta vel est cupiditate et eius, quasi vero? Amet non recusandae
+          accusamus provident iste!
+        </div>
+        <div class="modal-footer">
+          <h3>Modal Footer</h3>
+        </div>
+      </div>
+    </div>
+    <!-- Accordion -->
+    <h2>Accordion with symbols</h2>
+
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </div>
+
+    <footer role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-para"><h3>&copy; @netsolutions.com</h3></div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
